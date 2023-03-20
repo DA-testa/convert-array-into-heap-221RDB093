@@ -1,6 +1,3 @@
-# python3
-
-
 def heapify(data, n, i, swaps):
     minIndex = i
     leftChild = 2*i+1
@@ -34,16 +31,11 @@ def main():
 
     swaps = build_heap(data)
 
-    ##
+
 
     print(len(swaps))
     for i, j in swaps:
         print(i, j)
-
-    # Print the last swap
-    if len(swaps) > 0:
-        last_swap = swaps[-1]
-        print(last_swap[0], last_swap[1])
 
 
 if __name__ == "__main__":
